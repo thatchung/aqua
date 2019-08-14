@@ -33,6 +33,7 @@
 
 <script>
 	import moment from 'moment'
+	import SocketIO from 'socket.io-client'
 
 	export default {
 		routing: {
@@ -71,33 +72,50 @@
 	    },
 		methods: {
             loadListDevice: async function () {
-                // let list = await this.$api.get({
-                //     url: 'api/device',
-                // });
-                // if (list.meta.success) {
-                //     this.listdevice = list.data;
-                // } else {
-                //     this.listarea = [];
-                // }
-                this.listdevice = [{
-                	id: "001",
-        			fwversion: "v01"
-                }];
+                let list = await this.$api.get({
+					url: 'device',
+					header: {
+						token: "0123456789abcdef0123456789abcdef"
+					}
+                });
+                if (list.meta.success) {
+					this.listdevice = list.data;
+                } else {
+                    this.listarea = [];
+                }
             },
 			connectSocket: async function () {
-				this.sockets.subscribe('EVENT_NAME', (data) => {
-				    this.msg = data.message;
+				const socket = SocketIO(`http://27.71.232.111:8101`, {
+					path: '/log_aqua/live',
+					query: {
+						device_id: this.listdevice[0].id
+					}
+				});
+				socket.on('data', this.onEvent);
+				socket.on('connect', () => {
+					console.log('connected');
 				});
 			},
 			onEvent: async function (data) {
-				this.markers[0] = {
-					position: {
+				this.markers.push({
+			    	position: {
 			            lat: data.lat,
 			            lng: data.long,
 			    	},
+			    	icon: {
+			    		url: 'https://png.pngtree.com/svg/20170331/92e8cc0f9c.svg',
+					    size: {width: 30, height: 30, f: 'px', b: 'px'},
+					    scaledSize: {width: 15, height: 15, f: 'px', b: 'px'}
+			    	},
 			    	depth: data.depth,
+			        ph: data.ph,
+			        do: data.do,
+			        orp: data.orp,
 			        temp: data.temp,
-				}
+			        level: data.level,
+			        salinity: data.salinity
+				});
+				this.current_data = data;
 			},
 			getDataTest:async function(){
 				this.current_data =  {
@@ -172,7 +190,8 @@
 
 		loaded: async function () {
 			await this.loadListDevice();
-			await this.getDataTest();
+			await this.connectSocket();
+			// await this.getDataTest();
 		},
 	}
 

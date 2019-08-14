@@ -85,7 +85,16 @@ Vue.use(VueGoogleMaps, {
       libraries: 'places', 
     },
 });
-// Vue.use(VueSocketIO);
+// Vue.use(new VueSocketIO({
+//   debug: true,
+//   connection: 'http://127.0.0.1:8101',
+//   vuex: {
+//       store,
+//       actionPrefix: 'SOCKET_',
+//       mutationPrefix: 'SOCKET_'
+//   },
+//   options: { path: "/log_aqua/live" } //Optional options
+// }));
 
 Vue.component('tabs', Tabs);
 Vue.component('tab', Tab);

@@ -1,8 +1,8 @@
 <template>
     <div class="main-header">
         <router-link to="/" style="background-color:#bb5833" class="logo hidden-xs">
-            <span class="logo-mini"><b>Fuel Management System</b></span>
-            <span class="logo-lg"><b>Fuel Management System</b></span>
+            <span class="logo-mini"><b>Aqua Management System</b></span>
+            <span class="logo-lg"><b>Aqua Management System</b></span>
         </router-link>
 
         <nav class="navbar navbar-static-top" style="background-color:#dd6639">

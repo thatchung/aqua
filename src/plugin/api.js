@@ -18,8 +18,7 @@ async function request(options = {method, url, header, data, throwError, showErr
     try {
         let data = {
             method: options.method.trim().toLowerCase(),
-            url: "http://127.0.0.1:8095/api" + '/' + options.url,
-            // url: "http://27.71.232.111:8095/api" + '/' + options.url,
+            url: "http://27.71.232.111:8101/api" + '/' + options.url,
             headers: header,
         };
         if (data.method === 'get' || data.method === 'delete')
