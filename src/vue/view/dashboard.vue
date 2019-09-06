@@ -44,10 +44,10 @@
 		},
 		data: () => ({
 			listdevice:[],
-			current_data: 
+			current_data:
 			{
-			        long: 106.306728,
-			        lat: 10.255142
+		        long: 106.306728,
+		        lat: 10.255142
 			},
 			markers:[],
 			statusText:null,
