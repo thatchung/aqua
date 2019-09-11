@@ -37,6 +37,7 @@
 		data: () => ({
 			dateget : moment(),
 			listData : [],
+			listData2 : [],
 			labels_chart: [],
 			type : '02'
 		}),
@@ -46,12 +47,24 @@
                   labels  : this.labels_chart,
                   datasets: [
                     {
-                      	abel               	: 'No. 1',
+                      	label               	: 'No. 1',
                       	borderColor         : 'rgba(255,99,132,1)',
                       	backgroundColor	  	: '#479cab',
                       	borderWidth         : 1,
                       	fill                : true,
                       	data                : this.listData,
+                      	pointBackgroundColor: "rgba(98, 166, 214, 0)",
+                      	pointBorderWidth	: 1,
+                      	pointRadius			: 0,
+      					tension				: 0,
+                    },
+                     {
+                      	label               	: 'No. 1',
+                      	borderColor         : 'rgba(255,99,132,1)',
+                      	backgroundColor	  	: '#479cab',
+                      	borderWidth         : 1,
+                      	fill                : true,
+                      	data                : this.listData2,
                       	pointBackgroundColor: "rgba(98, 166, 214, 0)",
                       	pointBorderWidth	: 1,
                       	pointRadius			: 0,
