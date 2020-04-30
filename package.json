@@ -18,7 +18,7 @@
     "file-system": "^2.2.2",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "js-md5": "^0.7.3",
     "moment": "^2.23.0",
     "mqtt": "^2.18.8",
