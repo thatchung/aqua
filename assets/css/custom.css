@@ -412,7 +412,7 @@
 }
 
 .services-img1{
-    width: 510px;
+    width: 77%;
     position: absolute;
     z-index: 1;
     right: 0px;
@@ -424,7 +424,7 @@
 .services-img2{
     position: absolute;
     z-index: 2;
-    width: 350px;
+    width: 54%;
     bottom: 0px;
     left: 0px;
     opacity: 0;
@@ -432,7 +432,7 @@
 }
 
 .services-img3{
-    width: 460px;
+    width: 70%;
     margin: auto;
     margin-top: 40px;
     position: absolute;
@@ -442,7 +442,7 @@
 }
 
 .services-img4{
-    width: 460px;
+    width: 73%;
     margin: auto;
     margin-top: 40px;
     opacity: 0;
@@ -450,7 +450,7 @@
 }
 
 .services-img5{
-    width: 510px;
+    width: 66%;
     position: absolute;
     z-index: 2;
     right: 0px;
@@ -461,7 +461,7 @@
 .services-img6{
     position: absolute;
     z-index: 1;
-    width: 510px;
+    width: 66%;
     bottom: 0px;
     left: 0px;
     opacity: 0;
@@ -475,7 +475,7 @@
 }
 
 .services-img8{
-    width: 600px;
+    width: 80%;
     margin: auto;
     margin-top: 80px;
 }
@@ -487,7 +487,7 @@
 
 .services-img9{
     position: absolute;
-    width: 420px;
+    width: 76%;
     left: -130px;
     top: 0px;
     opacity: 0;
@@ -495,7 +495,7 @@
 }
 
 .services-img10{
-    width: 180px;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
     opacity: 0;
@@ -503,7 +503,7 @@
 }
 
 .services-img11{
-    width: 620px;
+    width: 70%;
     position: absolute;
     right: 0px;
     top: 50px;
@@ -551,4 +551,55 @@
     margin-top: 20px;
     font-size: 24px;
     cursor: pointer;
+}
+
+.services-div{
+    position:relative;
+    min-height: 600px;
+}
+
+.services-1-div{
+    position: relative; 
+    min-height: 950px;
+}
+
+.services-2-div{
+    position: relative; 
+    min-height: 600px;
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+    .services-div{
+        min-height: 650px;
+    }
+    .services-2-div{
+        min-height: 650px;
+    }
+    .div-title-services{
+        margin-top: 230px;
+    }
+}
+
+@media (min-width: 1900px){
+    .container{
+        max-width: 1700px;
+    }
+    .services-div{
+        min-height: 800px;
+    }
+    .services-1-div{
+        min-height: 950px;
+    }
+    .services-2-div{
+        min-height: 800px;
+    }
+    .div-title-services{
+        margin-top: 270px;
+    }
+    .services-img3{
+        top: -320px;
+    }
 }
