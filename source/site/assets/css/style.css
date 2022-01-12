@@ -92,6 +92,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #131730;
+    position: relative;
 }
 
 a,
@@ -360,8 +361,8 @@ textarea.form-input {
     position: fixed;
     top: 0;
     right: 0;
-    width: 70px;
-    height: 70px;
+    width: 69px;
+    height: 65px;
     background-color: #c10c3f;
     text-align: center;
     border: none;
@@ -3788,7 +3789,7 @@ textarea.form-input {
     .site-header,
     .site-header.sticky-header {
         background: #ffffff;
-        height: 70px;
+        height: 64px;
         padding: 0;
         box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }

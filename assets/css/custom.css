@@ -556,6 +556,7 @@
 .services-div{
     position:relative;
     min-height: 600px;
+    overflow: hidden;
 }
 
 .services-1-div{
@@ -566,7 +567,123 @@
 .services-2-div{
     position: relative; 
     min-height: 600px;
+    overflow: hidden;
 }
+
+.h2-big{
+    font-size: 56px;
+}
+
+.table-div{
+    position: relative;
+    min-height: 700px;
+    padding-top: 300px;
+}
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 991px){
+    .main-banner{
+        padding-top: 64px;
+    }
+    .main-services{
+        padding-top: 0px;
+    }
+    .div-title{
+        margin-top: 20px;
+    }
+    .title-h{
+        font-size: 30px;
+    }
+    .title-sub{
+        font-size: 16px;
+    }
+    .title-des{
+        font-size: 14px;
+    }
+    .services-div {
+        min-height: 350px;
+    }
+    .services-img3{
+        top: -95px;
+        left: 50px;
+    }
+    .services-1-div{
+        min-height: 550px;
+    }
+    .div-title-right{
+        margin-top: 20px;
+    }
+    .title-des-right{
+        font-size: 14px;
+    }
+    .main-services-1{
+        padding-bottom: 40px;
+    }
+    .main-counter {
+        padding-top: 10px;
+    }
+    .services-2-div{
+        margin-top: 20px;
+        min-height: 280px;
+    }
+    .h2-big{
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    .title-h-1{
+        font-size: 18px;
+    }
+    .title-sub-1{
+        font-size: 16px;
+    }
+    .title-des-1{
+        font-size: 16px;
+    }
+    .services-img7{
+        margin-top: 0px;
+    }
+    .table-div{
+        min-height: 400px;
+        padding-top: 200px;
+    }
+    .services-img9{
+        left: 30px;
+    }
+    .none_mobile{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .main-ia{
+        background-image: none;
+    }
+    .services-img10{
+        width: 60%;
+        margin-top: 20px;
+    }
+    .services-img11{
+        width: 65%;
+        right: -10px;
+        top: 25px;
+        position: relative;
+    }
+    .services-img12{
+        width: 50%;
+        margin: auto;
+        margin-top: 130px;
+    }
+    .main-product{
+        padding-top: 30px;
+    }
+    .item-product{
+        margin-bottom: 30px;
+    }
+}
+
 
 @media (min-width: 1400px){
     .container{
