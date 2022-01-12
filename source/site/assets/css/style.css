@@ -1020,6 +1020,7 @@ textarea.form-input {
     background-repeat: no-repeat;
     min-height: 1100px;
     padding-top: 100px ;
+    display: none;
 }
 
 /*==========Services Start==========*/
