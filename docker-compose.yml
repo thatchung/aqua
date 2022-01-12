@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+    aqua.site:
+        container_name: aqua.site
+        image: aqua:1.1.0
+        build: .
+        ports:
+        - "8409:8400"
