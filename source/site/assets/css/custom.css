@@ -1,5 +1,8 @@
 .site-branding{
-	width: 100px;
+	width: 80px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 /*.header-menu{
@@ -336,6 +339,10 @@
     margin-top: 80px;
 }
 
+.div-title-1{
+    margin-top: 80px;
+}
+
 .div-title-right{
     margin-top: 80px;
     text-align: right;
@@ -612,6 +619,10 @@ sup{
     .div-title{
         margin-top: 20px;
     }
+    .div-title-1{
+        margin-top: 20px;
+        padding-left: 10px;
+    }
     .title-h{
         font-size: 30px;
     }
@@ -627,6 +638,7 @@ sup{
     .services-img3{
         top: -95px;
         left: 50px;
+        width: 60%;
     }
     .services-1-div{
         min-height: 550px;
@@ -703,10 +715,12 @@ sup{
     }
     .div-counter{
         margin-top: 20px;
-        padding-left: 0px;
+        padding-left: 10px;
     }
     .site-branding{
-        width: 60px;
+        width: 45px;
+        left: 10px;
+        top: 0px;
     }
     .header-bottom{
         padding: 20px 0;

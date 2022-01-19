@@ -673,9 +673,10 @@ textarea.form-input {
 
 .header-bottom {
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     transition: 0.3s;
     background-color: #00000036;
+    position: relative;
 }
 
 .site-branding a {
@@ -847,7 +848,7 @@ textarea.form-input {
 }
 
 .sticky-header .header-bottom {
-    padding: 10px 0px;
+    padding: 15px 0px;
     transition: 0.3s;
 }
 

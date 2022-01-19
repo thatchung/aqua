@@ -1,5 +1,8 @@
 .site-branding{
-	width: 50px;
+	width: 80px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 /*.header-menu{
@@ -336,6 +339,10 @@
     margin-top: 80px;
 }
 
+.div-title-1{
+    margin-top: 80px;
+}
+
 .div-title-right{
     margin-top: 80px;
     text-align: right;
@@ -488,7 +495,7 @@
 .services-img9{
     position: absolute;
     width: 76%;
-    left: -130px;
+    left: -30px;
     top: 0px;
     opacity: 0;
     transform: translateX(300px);
@@ -503,12 +510,21 @@
 }
 
 .services-img11{
-    width: 70%;
+    width: 62%;
     position: absolute;
     right: 0px;
     top: 50px;
     opacity: 0;
     transform: translateX(300px);
+}
+
+.div-counter{
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.none_mobile{
+    padding-left: 50px;
 }
 
 .img-product{
@@ -573,10 +589,20 @@
 .h2-big{
     font-size: 56px;
 }
+.h2-big span{
+    color : #777777;
+}
+.h2-big .s_span{
+    color : #777777;
+    font-size: 28px;
+}
+sup{
+    font-size: 17px;
+}
 
 .table-div{
     position: relative;
-    min-height: 700px;
+    min-height: 820px;
     padding-top: 300px;
 }
 .mobile{
@@ -593,6 +619,10 @@
     .div-title{
         margin-top: 20px;
     }
+    .div-title-1{
+        margin-top: 20px;
+        padding-left: 10px;
+    }
     .title-h{
         font-size: 30px;
     }
@@ -608,6 +638,7 @@
     .services-img3{
         top: -95px;
         left: 50px;
+        width: 60%;
     }
     .services-1-div{
         min-height: 550px;
@@ -681,6 +712,27 @@
     }
     .item-product{
         margin-bottom: 30px;
+    }
+    .div-counter{
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    .site-branding{
+        width: 45px;
+        left: 10px;
+        top: 0px;
+    }
+    .header-bottom{
+        padding: 20px 0;
+    }
+    .sticky-header .header-bottom{
+        padding: 20px 0;
+    }
+    sup {
+        font-size: 12px;
+    }
+    .h2-big .s_span {
+        font-size: 16px;
     }
 }
 
